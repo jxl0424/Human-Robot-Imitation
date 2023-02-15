@@ -18,12 +18,12 @@ def publish_message():
   rospy.init_node('video_pub_py', anonymous=True)
      
   # Go through the loop 10 times per second
-  rate = rospy.Rate(10) # 10hz
+  rate = rospy.Rate(144) # 10hz
      
   # Create a VideoCapture object
   # The argument '0' gets the default webcam.
   cap = cv2.VideoCapture(0)
-     
+  
   # Used to convert between ROS and OpenCV images
   br = CvBridge()
  
